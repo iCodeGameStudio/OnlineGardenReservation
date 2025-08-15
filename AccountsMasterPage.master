@@ -1,0 +1,343 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/AccountsMasterPage.master.cs" Inherits="AccountsMasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="fa">
+<head runat="server">
+    <title>باغ من</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="<%= ResolveUrl("~/Images/logoicon.png")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Panels/Stylesheet/bootstrap-theme.css")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Panels/Stylesheet/rtl.css")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Panels/Stylesheet/font-awesome.min.css")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Panels/Stylesheet/ionicons.min.css")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Panels/Stylesheet/AdminLTE.css")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Panels/Stylesheet/skin-blue.min.css")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Stylesheet/loading.css")%>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Stylesheet/font.css")%>" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <script src="<%= ResolveUrl("~/Panels/JS/jquery.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/Panels/JS/bootstrap.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/Panels/JS/adminlte.min.js")%>"></script>
+    <link href="<%= ResolveUrl("~/Stylesheet/lobibox.css")%>" rel="stylesheet" />
+    <script src="<%= ResolveUrl("~/JS/jquery-2.2.3.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/JS/jquery-lobibox.1.2.4.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/JS/persianumber.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/JS/persianNum.jquery-2.js")%>"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <!-- Main Header -->
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini">کاربری</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b>حساب کاربری</b></span>
+                </a>
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- Messages: style can be found in dropdown.less-->
+                            <li class="dropdown messages-menu" style="display: none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="label label-success">4</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">۴ پیام خوانده نشده</li>
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu">
+                                            <li>
+                                                <!-- start message -->
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="<%= ResolveUrl("~/Panels/dist/img/user2-160x160.png")%>" class="img-circle" alt="User Image">
+                                                    </div>
+                                                    <h4>علیرضا
+                        <small><i class="fa fa-clock-o"></i>۵ دقیقه پیش</small>
+                                                    </h4>
+                                                    <p>متن پیام</p>
+                                                </a>
+                                            </li>
+                                            <!-- end message -->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="<%= ResolveUrl("~/Panels/dist/img/user3-128x128.jpg")%>" class="img-circle" alt="User Image">
+                                                    </div>
+                                                    <h4>نگین
+                        <small><i class="fa fa-clock-o"></i>۲ ساعت پیش</small>
+                                                    </h4>
+                                                    <p>متن پیام</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="<%= ResolveUrl("~/Panels/dist/img/user4-128x128.jpg")%>" class="img-circle" alt="User Image">
+                                                    </div>
+                                                    <h4>نسترن
+                        <small><i class="fa fa-clock-o"></i>امروز</small>
+                                                    </h4>
+                                                    <p>متن پیام</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="<%= ResolveUrl("~/Panels/dist/img/user3-128x128.jpg")%>" class="img-circle" alt="User Image">
+                                                    </div>
+                                                    <h4>نگین
+                        <small><i class="fa fa-clock-o"></i>دیروز</small>
+                                                    </h4>
+                                                    <p>متن پیام</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="<%= ResolveUrl("~/Panels/dist/img/user4-128x128.jpg")%>" class="img-circle" alt="User Image">
+                                                    </div>
+                                                    <h4>نسترن
+                        <small><i class="fa fa-clock-o"></i>۲ روز پیش</small>
+                                                    </h4>
+                                                    <p>متن پیام</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">نمایش تمام پیام ها</a></li>
+                                </ul>
+                            </li>
+                            <!-- Notifications: style can be found in dropdown.less -->
+                            <li class="dropdown notifications-menu" style="display: none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="label label-warning">۱۰</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">۱۰ اعلان جدید</li>
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users text-aqua"></i>۵ کاربر جدید ثبت نام کردند
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-warning text-yellow"></i>اخطار دقت کنید
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users text-red"></i>۴ کاربر جدید ثبت نام کردند
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-shopping-cart text-green"></i>۲۵ سفارش جدید
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-user text-red"></i>نام کاربریتان را تغییر دادید
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">نمایش همه</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="#" class="user-image" alt="User Image" id="imgprofile2" runat="server">
+                                    <span class="hidden-xs" id="namefamily1" runat="server"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="#" class="img-circle" alt="User Image" id="imgprofile3" runat="server">
+                                        <p id="namefamily2" runat="server">
+                                            <small>کاربر</small>
+                                        </p>
+                                    </li>
+
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="<%= ResolveUrl("~/Accounts/AccountChangePassword")%>" class="btn btn-default btn-flat">تغییر گذرواژه</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="<%= ResolveUrl("~/Accounts/AccountSignout")%>" class="btn btn-default btn-flat">خروج</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Control Sidebar Toggle Button -->
+                            <li>
+                                <a href="#" data-toggle="control-sidebar" style="display: none"><i class="fa fa-gears"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- right side column. contains the logo and sidebar -->
+            <aside class="main-sidebar">
+
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel">
+                        <div class="pull-right image">
+                            <img id="imgprofile" src="#" class="img-circle" alt="User Image" runat="server">
+                        </div>
+                        <div class="pull-right info">
+                            <p id="namefamily3" runat="server"></p>
+                            <!-- Status -->
+                            <i class="fa fa-circle text-success" style="font-size: 9px;"></i><a>آنلاین </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Sidebar Menu -->
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li class="header">باغبون</li>
+                        <li id="home" runat="server"><a href="<%= ResolveUrl("~/Accounts/AccountHome")%>"><i class="fa fa-dashboard"></i><span>داشبورد</span></a></li>
+                        <li id="garden" runat="server"><a href="<%= ResolveUrl("~/Accounts/GardensAdd")%>"><i class="fa fa-tree"></i><span>باغ من</span></a></li>
+                        <li id="service" runat="server"><a href="<%= ResolveUrl("~/Accounts/ServiceExtension")%>"><i class="fa fa-briefcase"></i><span>تمدید سرویس</span></a></li>
+                        <li id="payment" runat="server"><a href="<%= ResolveUrl("~/Accounts/Payments")%>"><i class="fa fa-dollar"></i><span>پرداخت ها</span></a></li>
+                        <li class="treeview" id="servicesAdd" runat="server">
+                            <a href="#"><i class="fa fa-briefcase"></i><span>تعریف سرویس</span>
+                                <span class="pull-left-container">
+                                    <i class="fa fa-angle-right pull-left"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li id="serviceDefault" runat="server"><a href="<%= ResolveUrl("~/Accounts/ServicesDefaultAdd")%>">تعریف سرویس پیشفرض</a></li>
+                                <li id="serviceAdd" runat="server"><a href="<%= ResolveUrl("~/Accounts/ServicesAdd")%>">ثبت سرویس</a></li>
+                            </ul>
+                        <li id="report" runat="server"><a href="<%= ResolveUrl("~/Accounts/ServicesReport")%>"><i class="fa fa-print"></i><span>گزارش گیری</span></a></li>
+                        </li>
+                    </ul>
+                    <!-- /.sidebar-menu -->
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1 id="htitle" runat="server">عنوان صفحه
+                                <small>توضیحات</small>
+                    </h1>
+                    <ol class="breadcrumb" id="treepage" runat="server">
+                        
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content container-fluid">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark" style="visibility: hidden">
+                <!-- Create the tabs -->
+                <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                    <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- Home tab content -->
+                    <div class="tab-pane active" id="control-sidebar-home-tab">
+                        <h3 class="control-sidebar-heading">فعالیت ها</h3>
+                        <ul class="control-sidebar-menu">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                                    <div class="menu-info">
+                                        <h4 class="control-sidebar-subheading">تولد غلوم</h4>
+
+                                        <p>۲۴ مرداد</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.control-sidebar-menu -->
+
+                        <h3 class="control-sidebar-heading">پیشرفت کارها</h3>
+                        <ul class="control-sidebar-menu">
+                            <li>
+                                <a href="#">
+                                    <h4 class="control-sidebar-subheading">آپدیت لاراول
+                <span class="pull-left-container">
+                    <span class="label label-danger pull-left">70%</span>
+                </span>
+                                    </h4>
+
+                                    <div class="progress progress-xxs">
+                                        <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.control-sidebar-menu -->
+
+                    </div>
+                    <!-- /.tab-pane -->
+                    <!-- Stats tab content -->
+                    <div class="tab-pane" id="control-sidebar-stats-tab">تب وضعیت</div>
+                    <!-- /.tab-pane -->
+                    <!-- Settings tab content -->
+                    <div class="tab-pane" id="control-sidebar-settings-tab">
+                        <h3 class="control-sidebar-heading">تنظیمات عمومی</h3>
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                گزارش کنترلر پنل
+              <input checked class="pull-left" type="checkbox" />
+                            </label>
+                            <p>
+                                ثبت تمامی فعالیت های مدیران
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="control-sidebar-bg"></div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('body').persianNum();
+            })
+    </script>
+    </form>
+
+</body>
+</html>

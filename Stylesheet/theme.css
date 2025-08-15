@@ -1,0 +1,329 @@
+﻿.gridview
+{
+	width:100%;
+	font-family:IranSans;
+	font-size:13px;
+	color:#333333;
+}
+.gridview a
+{
+	color:#0066cc;
+	text-decoration:none;
+}
+.gridview a:hover
+{
+	color:#333333;
+}
+
+.gridview th
+{
+	padding:10px;
+	border:solid 1px #cdcdcd;
+}
+.gridview td
+{
+	padding:10px;
+	border:solid 1px #cdcdcd;
+}
+.gridview td label
+{
+	width:100%;
+	display:block;
+	overflow:hidden;
+	cursor:pointer;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.gridview td input[type=radio]
+{
+	width:100%;
+	display:block;
+	cursor:pointer;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.gridview-header
+{
+	height:48px;
+	background-color:#dddddd;
+}
+.gridview-nrow
+{
+	height:48px;
+	background-color:#ffffff;
+}
+.gridview-nrow:hover
+{
+	background-color:#e7f5e7;
+}
+.gridview-arow
+{
+	height:48px;
+	background-color:#eeeeee;
+}
+.gridview-arow:hover
+{
+	background-color:#e7f5e7;
+}
+.gridview-erow
+{
+	border:solid 1px #cdcdcd;
+	text-align:center;
+}
+.gridview-pager
+{
+	height:70px;
+	margin:0px;
+	padding:0px;
+	color:#ffffff;
+	background-color:#ffffff;
+}
+.gridview-pager a
+{
+	margin:5px;
+	padding:7px 15px 5px 15px;
+	color:#ffffff;
+	background-color:#e64b3c;
+	text-decoration:none;
+	border-radius:5px;
+	display:block;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	transition:color 1s, background-color 1s;
+	-webkit-transition:color 1s, background-color 1s;
+	-moz-transition:color 1s, background-color 1s;
+	-o-transition:color 1s, background-color 1s;
+}
+.gridview-pager a:hover
+{
+	background-color:#333333;
+}
+.gridview-pager span
+{
+	margin:5px;
+	padding:7px 15px 5px 15px;
+	background-color:#646464;
+	border-radius:5px;
+	display:block;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+.gridview-pager td
+{
+	margin:0px;
+	padding:0px;
+	border:solid 1px #cdcdcd;
+}
+.gridview-pager td table
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+.gridview-pager td table tr td
+{
+	border:0px;
+}
+.gridview-ltr-field
+{
+	direction:ltr;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.theme-textbox
+{
+	width:200px;
+	height:37px;
+	padding:5px;
+	font-family:IranSans;
+	font-size:13px;
+	color:#333333;
+	background-color:#ffffff;
+	border:solid 1px #cdcdcd;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+.theme-textbox[disabled]
+{
+	background-color:#ebebeb;
+	cursor:not-allowed;
+}
+:-ms-input-placeholder
+{
+    color:#aaaaaa !important;
+    opacity:1;
+}
+::-ms-input-placeholder
+{
+    color:#aaaaaa !important;
+    opacity:1;
+}
+:-moz-placeholder
+{
+    color:#aaaaaa !important;
+    opacity:1;
+}
+::-moz-placeholder
+{
+    color:#aaaaaa !important;
+    opacity:1;
+}
+:-webkit-input-placeholder
+{
+    color:#aaaaaa !important;
+    opacity:1;
+}
+::-webkit-input-placeholder
+{
+    color:#aaaaaa !important;
+    opacity:1;
+}
+.theme-button
+{
+	width:150px;
+	height:37px;
+	padding:5px;
+	font-family:IranSans;
+	font-size:13px;
+	color:#ffffff;
+	background-color:#29a83a;
+	border:0px;
+	cursor:pointer;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	transition:color 1s, background-color 1s;
+	-webkit-transition:color 1s, background-color 1s;
+	-moz-transition:color 1s, background-color 1s;
+	-o-transition:color 1s, background-color 1s;
+}
+.theme-button:hover
+{
+	background-color:#333333;
+}
+.theme-dropdownlist
+{
+	width:200px;
+	height:37px;
+	padding:5px;
+	font-family:IranSans;
+	font-size:13px;
+	color:#333333;
+	background-color:#ffffff;
+	border:solid 1px #cdcdcd;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+.theme-fileupload
+{
+	width:200px;
+	height:37px;
+	padding:5px;
+	font-family:IranSans;
+	font-size:13px;
+	color:#333333;
+	background-color:#ffffff;
+	border:solid 1px #cdcdcd;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+.theme-checkbox
+{
+	font-family:IranSans;
+	font-size:12px;
+	color:#333333;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.theme-asyncfileupload
+{
+    width:250px;
+    height:auto;
+    margin:0px;
+    padding:0px;
+    background-color:#5cb85c;
+    border:solid 1px #4cae4c;
+    display:inline-block;
+    cursor:pointer;
+    box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+	-o-transition:all 1s ease;
+	overflow:hidden;
+	position:relative;
+}
+.theme-asyncfileupload:hover
+{
+	background-color:#449d44;
+    border:solid 1px #398439;
+}
+.theme-asyncfileupload::before
+{
+	font-family:IranSans;
+	font-size:13px;
+	color:#ffffff;
+	width:100%;
+	line-height:33px;
+	display:block;
+	content:"انتخاب فایل تصویر ...";
+	position:absolute;
+	text-align:center;
+}
+.theme-asyncfileupload input
+{
+	height:35px;
+	display:block;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	cursor:pointer;
+	opacity:0;
+	filter:alpha(opacity=0);
+	overflow:hidden;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.theme-textbox1
+{
+    width:300px;
+    height:37px;
+    padding:5px;
+    font-family:IranSans;
+    font-size:13px;
+    color:#333333;
+    background-color:#ffffff;
+    border:none;
+    border-bottom:solid 3px #cdcdcd;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    transition:border 1s ease;
+    -webkit-transition:border 1s ease;
+    -moz-transition:border 1s ease;
+    -o-transition:border 1s ease;
+}
+.theme-textbox1:focus
+{
+	border-bottom:solid 3px #ff0000;
+}

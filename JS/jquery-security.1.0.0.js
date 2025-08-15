@@ -1,0 +1,2 @@
+$(document).ready(function() { $("html").on("contextmenu", function() { return false; }); });
+$(document).keydown(function(e) { var keystroke = String.fromCharCode(event.keyCode).toLowerCase(); if (e.ctrlKey && keystroke == 'c') { return false; } });

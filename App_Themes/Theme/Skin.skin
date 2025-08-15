@@ -1,0 +1,7 @@
+﻿<asp:Button runat="server" CssClass="theme-button" />
+<asp:LinkButton runat="server" CssClass="theme-link-button"></asp:LinkButton>
+<asp:TextBox runat="server" CssClass="theme-textbox"></asp:TextBox>
+<asp:DropDownList runat="server" CssClass="theme-dropdownlist"></asp:DropDownList>
+<asp:FileUpload runat="server" CssClass="theme-fileupload" />
+<asp:CheckBox runat="server" CssClass="theme-checkbox" />
+<asp:GridView runat="server" CssClass="gridview" HeaderStyle-CssClass="gridview-header" RowStyle-CssClass="gridview-nrow" AlternatingRowStyle-CssClass="gridview-arow" PagerStyle-CssClass="gridview-pager" EmptyDataRowStyle-CssClass="gridview-erow" />

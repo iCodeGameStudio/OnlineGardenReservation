@@ -1,0 +1,30 @@
+﻿body {
+    direction: rtl;
+    margin: 100px;
+    background-color: #0db764;
+    text-align: center;
+}
+
+a {
+    transition: color 1s ease;
+}
+
+.ltr-field {
+    direction: ltr;
+}
+
+.text {
+    font-family: IranSans;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+    .text a {
+        color: #ffffff;
+    }
+
+        .text a:hover {
+            color: #000000;
+            text-decoration: none;
+        }

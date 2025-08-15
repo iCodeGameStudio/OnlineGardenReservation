@@ -1,0 +1,369 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>باغبون ، رزرواسیون آنلاین باغ</title>
+    <link rel="shortcut icon" href="<%= ResolveUrl("~/Images/logoicon.png")%>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Language" content="fa" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <meta name="googlebot" content="index" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="2 Days" />
+    <meta name="rating" content="Safe For Kids" />
+    <meta name="dcterms.dateCopyrighted" content="baghebon.com" />
+    <meta name="document-type" content="Public" />
+    <meta name="document-rating" content="General" />
+    <meta name="classification" content="Consumer" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="resource-type" content="document" />
+    <meta name="doc-class" content="Living Document" />
+    <meta name="topic" content="باغبون ، رزرواسیون باغ" />
+    <meta name="directory" content="باغبون ، رزرواسیون باغ" />
+    <meta name="owner" content="باغبون ، رزرواسیون باغ" />
+    <meta name="category" content="باغبون ، رزرواسیون باغ" />
+    <meta name="classification" content="باغبون ، رزرواسیون باغ" />
+    <meta name="copyright" content="تمامی حقوق مادی و معنوی این وب سایت متعلق به گروه باغبون می باشد." />
+    <meta name="abstract" content="رزرو آنلاین باغ ها و سفره خانه ها ، باغبون در نظر دارد بهترین خدمات باغ ها را به شما ارائه دهد." />
+    <meta itemprop="name" content="Online Garden Reservation" />
+    <meta itemprop="url" content="http://baghebon.com/" />
+    <meta itemprop="description" content="باغبون ، رزرواسیون باغ" />
+    <meta name="DC.title" content="باغبون ، رزرواسیون باغ" />
+    <meta name="geo.region" content="IR-14" />
+    <meta name="geo.placename" content="باغبون ، رزرواسیون باغ" />
+    <meta name="keywords" content="باغ دیزاین,تفریح,تفریح بی دردسر,تفریح آسان,آسان رزرو,سایه بان,آلاچیق,پذیرایی,تابستان عالی,هوای توپ,شب رویایی,مهمانی,رزرو آنلاین,آنلاین رزرو,آپ رزرو باغ,چشم انداز سرسبز,تشریفات مجلل,باغ سنتی,سفره خانه,مجالس,کافه,تعطیلات عالی,آنی رزرو باغ,آنی رزرو,رزرواسیون آنی,لحظه ای رزرو کن,دورهمی,شام رویایی,میز آنلاین,کافه باغ,منو باز,اقامتگاه,انتخاب باغ,باغمون,باغ تالار پذیرایی,گردشگری,آبنما,سماور ذغالی,سماور زغالی,پارکینگ اختصاصی,آلاچیق شیشه ای,قهوه,دمنوش,موسیقی سنتی,سالن بازی,سرویس ویژه,منوی متنوع,نور پردازی,پذیرایی,اینترنت,حوض آب,آب,سبزه,طبیعت,گردش,باغات,کباب,تفریح,خوشگذرانی,شادی,جشن,تولد,باغ رستوران,چای,موزیک,نشاط,رزرو میز,تفریحگاه,تفرجگاه,تور,باغ,باغ رستوران,باغ مجالس,باغبون,باغبان,مجلس,عروسی,تولد,جشن,رزرو,رزرواسیون,رزرو باغ,رزرواسیون باغ,رزرواسیون آنلاین,رزرواسیون آنلاین باغ,سفارش,سفارش باغ,آلاچیق,طبیعت,طبیعت شیراز,گردش,مهمانی,مراسم,اقامتگاه,تفریح,تفریح باغ,باغ گردی,کباب,آب,استخر,خنک,پول پارتی,گاردن,گاردن پارتی,خوش گذرانی,خوشگذرانی,bagh,bagheboon,baghebon,reserve,baghebon online,green theme,baghebon.com,bagheboon.com,garden,garden party,pool,pool party,kabab,kabob,bagh,baq,baghe shiraz" />
+    <meta name="description" content="رزرو آنلاین باغ ها و سفره خانه ها ، باغبون در نظر دارد بهترین خدمات باغ ها را به شما ارائه دهد." />
+    <meta property="og:title" content="باغبون ، رزرواسیون باغ" />
+    <meta property="og:description" content="رزرو آنلاین باغ ها و سفره خانه ها ، باغبون در نظر دارد بهترین خدمات باغ ها را به شما ارائه دهد." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:url" content="http://baghebon.com/" />
+    <meta property="og:image" content="http://baghebon.com/Images/Oglogo.jpg" />
+
+
+    <link href="<%= ResolveUrl("~/Panels/Stylesheet/font-awesome.min.css")%>" rel="stylesheet" />
+    <link href="<%= ResolveUrl("~/Stylesheet/city_dialog_style.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/font.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/theme.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/font-head.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/user.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/responsive.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/menu.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/alert.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/res-menu.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/back-to-top.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/animate-custom.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/dropdown.menu.css")%>" type="text/css" rel="Stylesheet">
+    <link href="<%= ResolveUrl("~/Stylesheet/jquery.countdown.css")%>" rel="stylesheet" type="text/css">
+    <link href="<%= ResolveUrl("~/Stylesheet/owl.carousel.min.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveUrl("~/Stylesheet/owl.theme.default.min.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveUrl("~/stylesheet/sendpulse-prompt.min.css")%>" rel="stylesheet" type="text/css" media="all">
+    <link href="<%= ResolveUrl("~/Stylesheet/Slideshow/style.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveUrl("~/Stylesheet/sendpulse-prompt.min.css")%>" rel="stylesheet" type="text/css" media="all">
+    <link href="<%= ResolveUrl("~/Stylesheet/lobibox.css")%>" type="text/css" rel="Stylesheet" />
+    <script src="<%= ResolveUrl("~/js/jquery-2.2.3.min.js")%>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("~/js/analytics.js")%>" async=""></script>
+    <script src="<%= ResolveUrl("~/js/script.js")%>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("~/js/modernizr.custom.js")%>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("~/js/alert.js")%>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("~/js/res-menu.js")%>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("~/JS/jquery-dropdown.menu.1.0.0.min.js")%>" type="text/javascript" lang="javascript"></script>
+    <script src="<%= ResolveUrl("~/JS/jquery-easing.1.3.min.js")%>" type="text/javascript" lang="javascript"></script>
+    <script src="<%= ResolveUrl("~/js/jquery-security.1.0.0.js")%>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("~/js/owl.carousel.js")%>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("~/js/jquery.countdown.js")%>" type="text/javascript"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="<%= ResolveUrl("~/JS/jquery.countdown.js")%>" type="text/javascript"></script>
+    <script type="text/javascript" lang="javascript" src="<%= ResolveUrl("~/JS/jquery-lobibox.1.2.4.min.js")%>"></script>
+    <script src="<%= ResolveUrl("~/JS/persianNum.jquery-2.js")%>"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header-wrapper">
+            <asp:ScriptManager ID="script" runat="server"></asp:ScriptManager>
+
+            <div id="top-wrapper">
+                <div id="top">
+
+                    <div class="member-menu">
+                        <div id="divisnotlogin">
+                            <a href="<%= ResolveUrl("~/Accounts/AccountSignin")%>" title="باغ من">
+                                <li class="fa fa-tree" style="font-size: 14px; vertical-align: middle;"></li>
+                                &nbsp;باغ من</a>
+                            &nbsp;&nbsp;&nbsp;
+                           <a href="#" title="رزرو من">
+                               <li class="fa fa-user" style="font-size: 14px; vertical-align: middle;"></li>
+                               &nbsp;رزرو من</a>
+
+                        </div>
+                        <div class="header-date">
+                            <span id="divdate" runat="server"></span>
+                        </div>
+                    </div>
+                    <asp:UpdatePanel ID="updatepanel2" runat="server">
+                        <ContentTemplate>
+                            <div class="header-city1">
+                                <asp:Button ID="myBtn1" runat="server" Text="شهر خود را انتخاب کنید" />
+                            </div>
+                            <div class="header-city2">
+                                <asp:Button ID="myBtn2" runat="server" Text="شهر خود را انتخاب کنید" />
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <div class="member-menu-responsive">
+                        <div id="divisnotloginresponsive" class="member-dropdown-menu" style="width: auto;">
+
+                            <a href="<%= ResolveUrl("~/Accounts/AccountSignin")%>">
+                                <li class="fa fa-tree" style="font-size: 14px; vertical-align: middle;"></li>
+                                &nbsp;&nbsp;باغ من</a>
+                            <%--                            <div id="dropdown-menu-is-not-login" class="dropdown-menu dropdown-anchor-top-right dropdown-has-anchor" style="display: none;">
+                               
+                                 <ul>
+                                    <li><a href="<%= ResolveUrl("~/Accounts/AccountSignin")%>">ورود به مدیریت باغ</a></li>
+                                    <li><a href="<%= ResolveUrl("~/Accounts/AccountSignup")%>">ثبت باغ</a></li>
+                                </ul>
+                            </div>--%>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="menu-wrapper">
+                <div id="menu">
+                    <div id="menu-logo">
+                        <div id="menu-logo-right"></div>
+                        <div id="menu-logo-left">
+                            <h1>باغبون</h1>
+                            <h2>رزرو آنلاین باغ</h2>
+                        </div>
+                    </div>
+                    <div id="menu-navigation">
+                        <div id="cssmenu" class="align-right">
+                            <div id="menu-line" style="width: 78px; left: 0px;"></div>
+                            <div id="menu-button">Menu</div>
+                            <ul>
+                                <li><a href="GardensWedding">
+                                    <img src="<%= ResolveUrl("~/Images/151.png")%>" width="32" height="32" />&nbsp;<span style="vertical-align: top; line-height: 45px;">باغ مجالس</span></a></li>
+                                <li><a href="GardensRestaurant">
+                                    <img src="<%= ResolveUrl("~/Images/152.png")%>" width="32" height="32" />&nbsp;<span style="vertical-align: top; line-height: 45px;">باغ رستوران</span></a></li>
+                                <li><a href="TablecothHouse">
+                                    <img src="<%= ResolveUrl("~/Images/150.png")%>" width="38" height="38" />&nbsp;<span style="vertical-align: top; line-height: 45px;">سفره خانه</span></a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>">
+                                    <img src="<%= ResolveUrl("~/Images/HomeIcon.png")%>" width="32" height="32" />&nbsp;<span style="vertical-align: top; line-height: 45px;">صفحه اصلی</span></a></li>
+                            </ul>
+                        </div>
+                        <div id="dl-menu" class="dl-menuwrapper">
+                            <button class="dl-trigger">Open Menu</button>
+                            <ul class="dl-menu">
+                                <li><a href="<%= ResolveUrl("~/")%>">
+                                    <span style="vertical-align: top; line-height: 45px;">صفحه اصلی</span>&nbsp;<img src="<%= ResolveUrl("~/Images/HomeIcon.png")%>" width="32" height="32" /></a></li>
+                                <li><a href="#">
+                                    <span style="vertical-align: top; line-height: 45px;">سفره خانه</span>&nbsp;<img src="<%= ResolveUrl("~/Images/150.png")%>" width="32" height="32" /></a>
+                                </li>
+                                <li><a href="#">
+                                    <span style="vertical-align: top; line-height: 45px;">باغ مجالس</span>&nbsp;<img src="<%= ResolveUrl("~/Images/151.png")%>" width="32" height="32" /></a></li>
+                                <li><a href="#">
+                                    <span style="vertical-align: top; line-height: 45px;">باغ رستوران</span>&nbsp;<img src="<%= ResolveUrl("~/Images/152.png")%>" width="32" height="32" /></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">$(function () { $('#dl-menu').dlmenu({ animationClasses: { classin: 'dl-animate-in-5', classout: 'dl-animate-out-5' } }); });</script>
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <div id="footer-menu">
+            <div id="footer_menu_cont">
+                <ul id="footer_menu_ul">
+                    <a href="#">
+                        <li>
+                            <img src="<%= ResolveUrl("~/Images/MemberIcon.png")%>" /><br />
+                            <span style="vertical-align: middle; line-height: 15px;">رزرو من</span></li>
+                    </a>
+
+                    <a href="GardensWedding">
+                        <li>
+                            <img src="<%= ResolveUrl("~/Images/151.png")%>" /><br />
+                            <span style="vertical-align: middle; line-height: 15px;">باغ مجالس</span></li>
+                    </a>
+
+                    <a href="GardensRestaurant">
+                        <li>
+                            <img src="<%= ResolveUrl("~/Images/152.png")%>" /><br />
+                            <span style="vertical-align: middle; line-height: 15px;">باغ رستوران</span></li>
+                    </a>
+
+                    <a href="TablecothHouse">
+                        <li>
+                            <img src="<%= ResolveUrl("~/Images/150.png")%>" /><br />
+                            <span style="vertical-align: middle; line-height: 15px;">سفره خانه</span></li>
+                    </a>
+
+                    <a href="<%= ResolveUrl("~/")%>">
+                        <li>
+                            <img src="<%= ResolveUrl("~/Images/HomeIcon.png")%>" /><br />
+                            <span style="vertical-align: middle; line-height: 15px;">صفحه اصلی</span></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-menu-hidden">
+        </div>
+        <div id="footer-wrapper">
+            <div id="footer">
+                <div id="footer-four">
+                    <div class="footer-box-head">
+                        <p>باغبون</p>
+                    </div>
+                    <div class="footer-box-content">
+                        <ul>
+                            <li><a href="<%= ResolveUrl("~/")%>"><span>صفحه اصلی</span></a></li>
+                            <li><a href="#"><span>حامیان</span></a></li>
+                            <li><a href="#"><span>ویدیوها</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="footer-three">
+                    <div class="footer-box-head">
+                        <p>پنل کاربری</p>
+                    </div>
+                    <div class="footer-box-content">
+                        <ul>
+                            <li><a href="<%= ResolveUrl("~/Accounts/AccountSignin")%>"><span>باغ من</span></a></li>
+                            <li><a href="#"><span>رزرو من</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="footer-two">
+                    <div class="footer-box-head">
+                        <p>پشتیبانی</p>
+                    </div>
+                    <div class="footer-box-content">
+                        <ul>
+                            <li><a href="Contact-Us"><span>تماس با ما </span></a></li>
+                            <li><a href="#"><span>داستان ما</span></a></li>
+                            <li><a href="#"><span>همکاری با ما</span></a></li>
+                            <li><a href="#"><span>راهنما</span></a></li>
+                            <li><a href="#"><span>قوانین</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="footer-one">
+                    <div class="footer-box-head">
+                        <p>باغبون در</p>
+                    </div>
+                    <div class="footer-box-content">
+                        <ul id="social">
+                            <li id="Soroosh"><a href="https://sapp.ir/baghebon" id="linkSoroosh" target="_blank">سروش</a></li>
+                            <li id="Aparat"><a href="https://www.aparat.com/baghebon" id="linkAparat" target="_blank">آپارات</a></li>
+                            <li id="Instagram"><a href="https://www.instagram.com/_baghebon_" id="linkInstagram" target="_blank">اینستاگرام</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper-buttom">
+            <div id="footer-buttom">
+                <div id="footer-buttom-right">
+                    <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به گروه باغبون می باشد</p>
+                    <p>طبق ماده 12 فصل سوم <span>قانون جرائم رایانه ای </span>هرگونه کپی برداری از تصاویر و طرح قالب این وب سایت پیگرد قانونی دارد</p>
+                </div>
+                <div id="footer-buttom-left">
+                    <p style="margin-top: 10px; font-family: Verdana; font-size: 11px">Copyright © 2018. <a href="http://baghebon.com">Baghebon.com</a></p>
+                </div>
+            </div>
+        </div>
+        <a id="oz-scroll" class="style1" href="#" style="right: 15px; display: none;"></a>
+        <script src="<%= ResolveUrl("~/JS/back-to-top.js")%>" type="text/javascript"></script>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div>
+                    <div class="computer city-home">
+                        <asp:UpdatePanel ID="updatepanel1" runat="server">
+                            <ContentTemplate>
+                                <div class="ui fluid left icon input">
+                                    <asp:TextBox placeholder="...جستجوی سریع نام شهر" ID="txtSearch" runat="server" AutoPostBack="true" OnPreRender="txtSearch_PreRender"></asp:TextBox>
+                                    <i aria-hidden="true" class="search icon"></i>
+
+                                </div>
+                                <asp:Repeater ID="Repeater1" runat="server">
+                                    <HeaderTemplate>
+                                        <ul class="ui centered doubling five cards">
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <li class="ui card city">
+                                            <a target="_self" class="ui button" role="button" href="<%# queryString(Eval("city").ToString()) %>" id="myLinks">
+                                                <h2><%# Eval("city").ToString() %></h2>
+                                            </a>
+                                        </li>
+                                    </ItemTemplate>
+                                    <FooterTemplate></ul></FooterTemplate>
+                                </asp:Repeater>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn1 = document.getElementById('<%= myBtn1.ClientID %>');
+
+            var btn2 = document.getElementById('<%= myBtn2.ClientID %>');
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks on the button, open the modal
+            btn1.onclick = function () {
+                modal.style.display = "block";
+            }
+            btn2.onclick = function () {
+                modal.style.display = "block";
+            }
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+                location.reload();
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    location.reload();
+                }
+            }
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('body').persianNum();
+            })
+        </script>
+
+
+    </form>
+
+</body>
+</html>
