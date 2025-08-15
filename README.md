@@ -27,8 +27,8 @@ Import it into SQL Server Management Studio to use the project.
 
 ## 🔑 Admin Login
 **URL:** `Admin/managementsignin`  
-**Email:** `cracker.crypt@gmail.com`  
-**Password:** `2631373`  
+**Email:** `ali@gmail.com`  
+**Password:** `1234`  
 
 ---
 
